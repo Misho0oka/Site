@@ -1,0 +1,26 @@
+.center{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.b{
+    list-style-type: square;
+    font-size: xx-large;
+}
+.a{
+    font-size: xx-large;
+}
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #1105ff, 0 0 20px #2b00ff, 0 0 30px #1f00e6, 0 0 40px #1b00e6, 0 0 50px #1f00e6, 0 0 60px #1f00e6, 0 0 70px #0c00e6;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
