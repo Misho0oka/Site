@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    color:white;
+    background-color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    font-size: 5ch;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    padding: 0 15px;
+    color: white;
+}
+nav a:hover,
+nav a.active {
+    color: #ffcc00;
+}
+.match{
+    background-color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.match:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+.match img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.match-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 2000px;
+    margin-left: 200px;
+    border-radius: 70px;
+    background-color: black;
+    padding: 50px;
+}
+.podrobnosti {
+    color: #ffcc00;
+}
+
+.prikluchi {
+    color: #ff3300; 
+}
+
+.sega {
+    color: #00ff00; 
+}
+
+.svurshi {
+    color: #00ccff;
+}
+.kor{
+    text-align: center;
+    font-size: xx-large;
+}
+.center{
+    text-align: center;
+    font-style: italic;
+}
