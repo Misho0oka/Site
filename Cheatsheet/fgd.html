@@ -3,17 +3,17 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>gfdgsd</title>
+    <title>Cheatsheet</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='neshto.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <main>
         <header>
             <div class="glow">
-            <h1>HTML Cheatsheet</h1>
-        </div>
+                <h1>HTML Cheatsheet</h1>
+            </div>
         </header>
         <section>
             <h2>Основни тагове</h2>
@@ -241,5 +241,12 @@
             </table>
         </section>
     </main>
+    <script>
+        document.querySelectorAll('tbody tr').forEach(function(row) {
+            row.addEventListener('click', function() {
+                this.classList.toggle('expanded');
+            });
+        });
+    </script>
 </body>
 </html>
