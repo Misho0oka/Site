@@ -1,50 +1,166 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 20px;
-    background-color: #007bff;
+    transition: all 0.3s ease;
 }
+
+main {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-10px);
+    opacity: 0.95;
+}
+
 header {
-    background: #aeaeae;
-    color: white;
-    padding: 10px 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
+
+.glow h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
 section {
-    margin: 20px 0;
+    text-align: left;
 }
-h1 {
-    color: #333;
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffe259;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
 }
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+
+table thead {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+table th, table td {
+    padding: 12px;
     text-align: left;
+    color: #fefefe;
 }
-th {
-    background-color: #007bff;
-    color: white;
-    <! -- gdfgfdgdfgdfg -->
+
+table th {
+    font-weight: bold;
 }
-.glow {
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+
+table td {
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
     }
-    to {
-      text-shadow: 0 0 20px #f701ff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+    h2 {
+        font-size: 1.8rem;
     }
-  }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .glow h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    table th, table td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .glow h1 {
+        font-size: 2rem;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+table tbody tr {
+    position: relative;
+}
+
+table tbody tr td + td {
+    display: none; 
+}
+
+table tbody tr.expanded td + td {
+    display: table-cell;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00c6ff;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0072ff;
+}
