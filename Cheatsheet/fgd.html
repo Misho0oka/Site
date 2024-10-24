@@ -1,278 +1,245 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>HTML Cheatsheet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        section {
-            margin: 20px 0;
-        }
-        h1 {
-            color: #333;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>gfdgsd</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-
-<header>
-    <h1>HTML Cheatsheet</h1>
-</header>
-
-<main>
-    <section>
-        <h2>Основни тагове</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Таг</th>
-                    <th>Описание</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt;html&gt;</td>
-                    <td>Коренен елемент на HTML документа.</td>
-                </tr>
-                <tr>
-                    <td>&lt;head&gt;</td>
-                    <td>Секция за мета информация, заглавие и стилове.</td>
-                </tr>
-                <tr>
-                    <td>&lt;title&gt;</td>
-                    <td>Заглавието на страницата, показва се в таба на браузъра.</td>
-                </tr>
-                <tr>
-                    <td>&lt;body&gt;</td>
-                    <td>Съдържа видимата част на документа.</td>
-                </tr>
-                <tr>
-                    <td>&lt;header&gt;</td>
-                    <td>Водеща част на документа, обикновено съдържа заглавия и навигация.</td>
-                </tr>
-                <tr>
-                    <td>&lt;footer&gt;</td>
-                    <td>Долна част на документа, обикновено съдържа информация за авторски права.</td>
-                </tr>
-                <tr>
-                    <td>&lt;section&gt;</td>
-                    <td>Секция, която групира свързани съдържания.</td>
-                </tr>
-                <tr>
-                    <td>&lt;article&gt;</td>
-                    <td>Самостоятелна част от съдържанието, която може да бъде публикувана самостоятелно.</td>
-                </tr>
-                <tr>
-                    <td>&lt;nav&gt;</td>
-                    <td>Навигационна част на документа.</td>
-                </tr>
-                <tr>
-                    <td>&lt;aside&gt;</td>
-                    <td>Допълнително съдържание, свързано с основния контекст.</td>
-                </tr>
-                <tr>
-                    <td>&lt;main&gt;</td>
-                    <td>Основно съдържание на документа.</td>
-                </tr>
-                <tr>
-                    <td>&lt;h1&gt; до &lt;h6&gt;</td>
-                    <td>Заглавия с различна важност, h1 е най-важното, h6 е най-малко важно.</td>
-                </tr>
-                <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Параграф текст.</td>
-                </tr>
-                <tr>
-                    <td>&lt;a&gt;</td>
-                    <td>Хипервръзка към друга страница или ресурс.</td>
-                </tr>
-                <tr>
-                    <td>&lt;strong&gt;</td>
-                    <td>Подчертава важността на текста (обикновено с удебелен шрифт).</td>
-                </tr>
-                <tr>
-                    <td>&lt;em&gt;</td>
-                    <td>Подчертава акцента на текста (обикновено с курсив).</td>
-                </tr>
-                <tr>
-                    <td>&lt;b&gt;</td>
-                    <td>Удебелен текст без семантична важност.</td>
-                </tr>
-                <tr>
-                    <td>&lt;i&gt;</td>
-                    <td>Курсивен текст без семантична важност.</td>
-                </tr>
-                <tr>
-                    <td>&lt;span&gt;</td>
-                    <td>Общ контейнер за стилизиране на част от текста.</td>
-                </tr>
-                <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>Нов ред.</td>
-                </tr>
-                <tr>
-                    <td>&lt;hr&gt;</td>
-                    <td>Хоризонтална линия, разделяща съдържанието.</td>
-                </tr>
-                <tr>
-                    <td>&lt;ul&gt;</td>
-                    <td>Неномериран списък.</td>
-                </tr>
-                <tr>
-                    <td>&lt;ol&gt;</td>
-                    <td>Номериран списък.</td>
-                </tr>
-                <tr>
-                    <td>&lt;li&gt;</td>
-                    <td>Елемент от списък.</td>
-                </tr>
-                <tr>
-                    <td>&lt;img&gt;</td>
-                    <td>Изображение.</td>
-                </tr>
-                <tr>
-                    <td>&lt;audio&gt;</td>
-                    <td>Аудио файл.</td>
-                </tr>
-                <tr>
-                    <td>&lt;video&gt;</td>
-                    <td>Видеофайл.</td>
-                </tr>
-                <tr>
-                    <td>&lt;iframe&gt;</td>
-                    <td>Вградена рамка за друга страница или ресурс.</td>
-                </tr>
-                <tr>
-                    <td>&lt;figure&gt;</td>
-                    <td>Контейнер за медийно съдържание.</td>
-                </tr>
-                <tr>
-                    <td>&lt;figcaption&gt;</td>
-                    <td>Описание на медийно съдържание в figure.</td>
-                </tr>
-                <tr>
-                    <td>&lt;table&gt;</td>
-                    <td>Таблица.</td>
-                </tr>
-                <tr>
-                    <td>&lt;tr&gt;</td>
-                    <td>Ред в таблица.</td>
-                </tr>
-                <tr>
-                    <td>&lt;td&gt;</td>
-                    <td>Клетка в таблица.</td>
-                </tr>
-                <tr>
-                    <td>&lt;th&gt;</td>
-                    <td>Заглавна клетка в таблица.</td>
-                </tr>
-                <tr>
-                    <td>&lt;thead&gt;</td>
-                    <td>Горна част на таблицата, съдържа заглавия.</td>
-                </tr>
-                <tr>
-                    <td>&lt;tbody&gt;</td>
-                    <td>Основна част на таблицата, съдържа редовете с данни.</td>
-                </tr>
-                <tr>
-                    <td>&lt;tfoot&gt;</td>
-                    <td>Долна част на таблицата, обикновено съдържа обобщаваща информация.</td>
-                </tr>
-                <tr>
-                    <td>&lt;form&gt;</td>
-                    <td>Форма за събиране на входни данни от потребителя.</td>
-                </tr>
-                <tr>
-                    <td>&lt;input&gt;</td>
-                    <td>Поле за въвеждане на данни.</td>
-                </tr>
-                <tr>
-                    <td>&lt;textarea&gt;</td>
-                    <td>Текстово поле за много редове.</td>
-                </tr>
-                <tr>
-                    <td>&lt;button&gt;</td>
-                    <td>Бутон за взаимодействие с потребителя.</td>
-                </tr>
-                <tr>
-                    <td>&lt;select&gt;</td>
-                    <td>Падащо меню за избор.</td>
-                </tr>
-                <tr>
-                    <td>&lt;option&gt;</td>
-                    <td>Опция в падащото меню.</td>
-                </tr>
-                <tr>
-                    <td>&lt;label&gt;</td>
-                    <td>Етикет за форма или входно поле.</td>
-                </tr>
-                <tr>
-                    <td>&lt;div&gt;</td>
-                    <td>Общ контейнер за групиране на съдържание.</td>
-                </tr>
-                <tr>
-                    <td>&lt;meta&gt;</td>
-                    <td>Мета информация за документа (като автор, ключови думи и описание).</td>
-                </tr>
-                <tr>
-                    <td>&lt;link&gt;</td>
-                    <td>Свързва външни ресурси (например CSS файлове).</td>
-                </tr>
-                <tr>
-                    <td>&lt;style&gt;</td>
-                    <td>Вградени стилове за CSS в документа.</td>
-                </tr>
-                <tr>
-                    <td>&lt;script&gt;</td>
-                    <td>Скриптове, обикновено JavaScript, за интерактивност.</td>
-                </tr>
-                <tr>
-                    <td>&lt;details&gt;</td>
-                    <td>Контейнер за разширяване и свиване на съдържание.</td>
-                </tr>
-                <tr>
-                    <td>&lt;summary&gt;</td>
-                    <td>Заглавие за елемента details.</td>
-                </tr>
-                <tr>
-                    <td>&lt;progress&gt;</td>
-                    <td>Индикатор за напредък на задача.</td>
-                </tr>
-                <tr>
-                    <td>&lt;meter&gt;</td>
-                    <td>Индикатор за измерване на стойности в определен диапазон.</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</main>
-
+    <main>
+        <header>
+            <div class="glow">
+            <h1>HTML Cheatsheet</h1>
+        </div>
+        </header>
+        <section>
+            <h2>Основни тагове</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Таг</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>Коренен елемент на HTML документа.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>Секция за мета информация, заглавие и стилове.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td>Заглавието на страницата, показва се в таба на браузъра.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>Съдържа видимата част на документа.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Водеща част на документа, обикновено съдържа заглавия и навигация.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Долна част на документа, обикновено съдържа информация за авторски права.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Секция, която групира свързани съдържания.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Самостоятелна част от съдържанието, която може да бъде публикувана самостоятелно.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Навигационна част на документа.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>Допълнително съдържание, свързано с основния контекст.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Основно съдържание на документа.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt; до &lt;h6&gt;</td>
+                        <td>Заглавия с различна важност, h1 е най-важното, h6 е най-малко важно.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Параграф текст.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>Хипервръзка към друга страница или ресурс.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Подчертава важността на текста (обикновено с удебелен шрифт).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Подчертава акцента на текста (обикновено с курсив).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;b&gt;</td>
+                        <td>Удебелен текст без семантична важност.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;i&gt;</td>
+                        <td>Курсивен текст без семантична важност.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Общ контейнер за стилизиране на част от текста.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Нов ред.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;hr&gt;</td>
+                        <td>Хоризонтална линия, разделяща съдържанието.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Неномериран списък.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Номериран списък.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>Елемент от списък.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Изображение.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Аудио файл.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Видеофайл.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>Вградена рамка за друга страница или ресурс.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Контейнер за медийно съдържание.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>Описание на медийно съдържание в figure.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Таблица.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Ред в таблица.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Клетка в таблица.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Заглавна клетка в таблица.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Горна част на таблицата, съдържа заглавия.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Основна част на таблицата, съдържа редовете с данни.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Долна част на таблицата, обикновено съдържа обобщаваща информация.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Форма за събиране на входни данни от потребителя.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>Поле за въвеждане на данни.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>Текстово поле за много редове.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;button&gt;</td>
+                        <td>Бутон за взаимодействие с потребителя.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Падащо меню за избор.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;option&gt;</td>
+                        <td>Опция в падащото меню.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>Етикет за форма или входно поле.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Общ контейнер за групиране на съдържание.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meta&gt;</td>
+                        <td>Мета информация за документа (като автор, ключови думи и описание).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link&gt;</td>
+                        <td>Свързва външни ресурси (например CSS файлове).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;style&gt;</td>
+                        <td>Вградени стилове за CSS в документа.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;script&gt;</td>
+                        <td>Скриптове, обикновено JavaScript, за интерактивност.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;details&gt;</td>
+                        <td>Контейнер за разширяване и свиване на съдържание.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;summary&gt;</td>
+                        <td>Заглавие за елемента details.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;progress&gt;</td>
+                        <td>Индикатор за напредък на задача.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meter&gt;</td>
+                        <td>Индикатор за измерване на стойности в определен диапазон.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
