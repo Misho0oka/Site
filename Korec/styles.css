@@ -41,6 +41,7 @@ nav a.active {
     border-radius: 10px 10px 0 0;
 }
 .match-container {
+    overflow: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -74,3 +75,9 @@ nav a.active {
     text-align: center;
     font-style: italic;
 }
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .match-container {
+      height: 100%;
+    }
+  }
