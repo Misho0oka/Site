@@ -29,7 +29,7 @@ nav a.active {
 }
 .match{
     background-color: #333;
-    border-radius: 10px;
+    border-radius: 5%;
     transition: transform 0.3s;
 }
 .match:hover {
@@ -44,13 +44,13 @@ nav a.active {
     overflow: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 90%;
+    gap: 1vw;
+    width: 85%;
     background-size: contain;
-    margin: 40px;
+    margin: 2vw;
     border-radius: 70px;
     background-color: black;
-    padding: 50px;
+    padding: 4vw;
 }
 .podrobnosti {
     color: #ffcc00;
@@ -75,9 +75,9 @@ nav a.active {
     text-align: center;
     font-style: italic;
 }
-@media only screen and (max-width:500px) {
-    /* For mobile phones: */
+@media only screen and (max-width:750px) {
     .match-container {
-      height: 100%;
+        grid-template-columns: 100%;
+
     }
-  }
+}
