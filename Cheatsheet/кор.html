@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cheatsheet</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='neshto.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="glow">
+                <h1>CSS Cheatsheet</h1>
+            </div>
+        </header>
+        <section>
+            <h2>CSS Свойства</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Свойство</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>color</td>
+                        <td>Задава цвета на текста.</td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>Определя фоновия цвят на елемент.</td>
+                    </tr>
+                    <tr>
+                        <td>opacity</td>
+                        <td>Определя нивото на прозрачност на елемент.</td>
+                    </tr>
+                    <tr>
+                        <td>font-family</td>
+                        <td>Определя шрифта за текста.</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>Задава размера на текста.</td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>Задава пространството извън елемента.</td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>Задава пространството вътре в елемента.</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>Определя рамката около елемента.</td>
+                    </tr>
+                    <tr>
+                        <td>display</td>
+                        <td>Определя как се показва елементът (block, inline и т.н.).</td>
+                    </tr>
+                    <tr>
+                        <td>position</td>
+                        <td>Определя метода на позициониране на елемента.</td>
+                    </tr>
+                    <tr>
+                        <td>flex</td>
+                        <td>Определя гъвкава кутия за подреждане.</td>
+                    </tr>
+                    <tr>
+                        <td>grid</td>
+                        <td>Определя решетъчна структура за подреждане.</td>
+                    </tr>
+                    <tr>
+                        <td>overflow</td>
+                        <td>Контролира какво става, когато съдържанието излиза извън кутията на елемента.</td>
+                    </tr>
+                    <tr>
+                        <td>transition</td>
+                        <td>Определя преходния ефект при промяна на свойство.</td>
+                    </tr>
+                    <tr>
+                        <td>animation</td>
+                        <td>Определя анимация за елемент.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>CSS Селектори</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Селектор</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>*</td>
+                        <td>Избира всички елементи в документа.</td>
+                    </tr>
+                    <tr>
+                        <td>.classname</td>
+                        <td>Избира всички елементи с указан клас.</td>
+                    </tr>
+                    <tr>
+                        <td>#idname</td>
+                        <td>Избира елемента с указан ID.</td>
+                    </tr>
+                    <tr>
+                        <td>:hover</td>
+                        <td>Прилага стилове, когато курсорът е над елемента.</td>
+                    </tr>
+                    <tr>
+                        <td>:active</td>
+                        <td>Прилага стилове, когато елементът е активиран (щракнат).</td>
+                    </tr>
+                    <tr>
+                        <td>:focus</td>
+                        <td>Прилага стилове, когато елементът е фокусиран.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('tbody tr').forEach(function(row) {
+            row.addEventListener('click', function() {
+                this.classList.toggle('expanded');
+            });
+        });
+    </script>
+</body>
+</html>
