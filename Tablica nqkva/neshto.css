@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+@media only screen and (max-width:200px){
+    td,th{
+        display: block;
+    }
+    td:nth-of-type(1)::before{padding-right: 10vw; content: "Име";}
+    td:nth-of-type(2)::before{padding-right: 5vw; content: "Възраст";}
+    td:nth-of-type(3)::before{padding-right: 5vw; content: "Град";}
+    td:nth-of-type(4)::before{padding-right: 5vw; content: "Професия";}
+    
+}
